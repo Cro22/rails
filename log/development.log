@@ -1,0 +1,95 @@
+Started GET "/" for 127.0.0.1 at 2022-12-28 15:53:20 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.8ms | Allocations: 629)
+Completed 200 OK in 32ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5183)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-12-28 15:53:23 -0400
+Processing by WelcomeController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/hello.html within layouts/application
+  Rendered welcome/hello.html within layouts/application (Duration: 0.4ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 243.2ms | Allocations: 84424)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.0ms | Allocations: 85441)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (D:/Projects/RubyMine/cursoApp/tmp/cache/assets/sprockets/v4.0.0/Pn/PnL2MlknVGyhdAbOq3vOgRiUe-WbrnfnQBYlFAmWj7o.cache.21180.37332.724202, D:/Projects/RubyMine/cursoApp/tmp/cache/assets/sprockets/v4.0.0/Pn/PnL2MlknVGyhdAbOq3vOgRiUe-WbrnfnQBYlFAmWj7o.cache)):
+  
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.2.0) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.2.0) lib/sprockets/loader.rb:263:in `store_asset'
+sprockets (4.2.0) lib/sprockets/loader.rb:226:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/map.rb:203:in `block in fetch_or_store'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/map.rb:182:in `fetch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/map.rb:202:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/bundle.rb:32:in `block in call'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each_key'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each'
+sprockets (4.2.0) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/map.rb:203:in `block in fetch_or_store'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/map.rb:182:in `fetch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/map.rb:202:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.0) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/hello" for 127.0.0.1 at 2022-12-28 15:56:19 -0400
+Processing by WelcomeController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/hello.html within layouts/application
+  Rendered welcome/hello.html within layouts/application (Duration: 0.9ms | Allocations: 251)
+  Rendered layout layouts/application.html.erb (Duration: 100.7ms | Allocations: 39959)
+Completed 200 OK in 113ms (Views: 105.5ms | ActiveRecord: 0.0ms | Allocations: 43215)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-12-28 15:56:44 -0400
+Processing by WelcomeController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/hello.html within layouts/application
+  Rendered welcome/hello.html within layouts/application (Duration: 0.3ms | Allocations: 87)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3039)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 3895)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-12-28 15:56:45 -0400
+Processing by WelcomeController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/hello.html within layouts/application
+  Rendered welcome/hello.html within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2461)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2757)
+
+
